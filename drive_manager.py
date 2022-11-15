@@ -16,6 +16,9 @@ SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly']
 
 class DriveManager:
 
+    def __init__(self) -> None:
+        pass
+
     def main(self):
         """Shows basic usage of the Drive v3 API.
         Prints the names and ids of the first 10 files the user has access to.
@@ -55,4 +58,3 @@ class DriveManager:
         except HttpError as error:
             # TODO(developer) - Handle errors from drive API.
             print(f'An error occurred: {error}')
-
